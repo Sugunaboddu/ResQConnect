@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: user-service
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/userdb
+    username: resq_user
+    password: ${DB_PASSWORD}
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+  profiles:
+        active: dev
+
+server:
+  port: 8081
