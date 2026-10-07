@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: rescue-team-service
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/resq_rescue_teamdb
+    username: resq_user
+    password: ${DB_PASSWORD}
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+server:
+  port: 8083
